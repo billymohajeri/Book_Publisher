@@ -1,6 +1,6 @@
 function ListGroup() {
   let items = ["One", "Two", "Three", "Four", "Five"];
-  items = [];
+//   items = [];
   return (
     <>
       <h1>List</h1>

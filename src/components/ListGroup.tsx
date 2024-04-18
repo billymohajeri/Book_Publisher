@@ -13,7 +13,11 @@ function ListGroup() {
         {items.map((item, index) => (
           <li
             key={item}
-            className="list-group-item"
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
             onClick={() => {
               setSelectedIndex(index);
             }}

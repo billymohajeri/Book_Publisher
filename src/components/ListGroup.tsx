@@ -2,7 +2,7 @@
 
 function ListGroup() {
   let items = ["One", "Two", "Three", "Four", "Five"];
-  //   items = [];
+  
   useState
 
   const handleClick = (event: MouseEvent) => console.log(event);

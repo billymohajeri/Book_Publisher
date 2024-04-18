@@ -3,9 +3,7 @@ import { useState } from "react";
 function ListGroup() {
   let items = ["One", "Two", "Three", "Four", "Five"];
 
-useState
-
-  const handleClick = (event: MouseEvent) => console.log(event);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
@@ -15,8 +13,10 @@ useState
         {items.map((item, index) => (
           <li
             key={item}
-            className="list-group-item active"
-            onClick={handleClick}
+            className="list-group-item"
+            onClick={() => {
+              setSelectedIndex(index);
+            }}
           >
             {item}
           </li>

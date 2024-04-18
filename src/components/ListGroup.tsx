@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function ListGroup() {
-  let items = ["One", "Two", "Three", "Four", "Five"];
+  
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
 

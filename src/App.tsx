@@ -8,7 +8,9 @@ function App() {
   };
   return (
     <div>
-      <Alert />
+      <Alert>
+        Hello <span>World</span>
+      </Alert>
       <ListGroup
         heading="Numbers"
         items={items}

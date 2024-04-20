@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
 
 function App() {
   let items = ["One", "Two", "Three", "Four", "Five"];
@@ -7,6 +8,7 @@ function App() {
   };
   return (
     <div>
+      <Alert />
       <ListGroup
         heading="Numbers"
         items={items}

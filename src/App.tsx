@@ -1,5 +1,6 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 function App() {
   let items = ["One", "Two", "Three", "Four", "Five"];
@@ -11,6 +12,7 @@ function App() {
       <Alert>
         Hello <span>World</span>
       </Alert>
+      <Button>Click me!</Button>
       <ListGroup
         heading="Numbers"
         items={items}

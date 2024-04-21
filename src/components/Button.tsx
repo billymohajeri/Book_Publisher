@@ -2,6 +2,7 @@ import { Children, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  onClick: () => void;
 }
 
 const Button = ({ children }: Props) => {

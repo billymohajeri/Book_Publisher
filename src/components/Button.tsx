@@ -1,8 +1,17 @@
+import { Children, ReactNode } from "react";
 
-const Button = () => {
-  return (
-    <div>Button</div>
-  )
+interface Props {
+  children: ReactNode;
 }
 
-export default Button
+const Button = ({ children }: Props) => {
+  return (
+    <div>
+      <button type="button" className="btn btn-primary">
+        {children}
+      </button>
+    </div>
+  );
+};
+
+export default Button;

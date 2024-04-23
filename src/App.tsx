@@ -12,7 +12,9 @@ function App() {
       <Alert>
         Hello <span>World</span>
       </Alert>
-      <Button onClick={() => console.log("Button clicked!")}>Click me!</Button>
+      <Button onClick={() => console.log("Button clicked!")} color="secondary">
+        Click me!
+      </Button>
       <ListGroup
         heading="Numbers"
         items={items}

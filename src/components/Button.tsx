@@ -3,6 +3,7 @@ import { Children, ReactNode } from "react";
 interface Props {
   children: ReactNode;
   onClick: () => void;
+  color: string;
 }
 
 const Button = ({ children, onClick }: Props) => {

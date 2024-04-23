@@ -10,13 +10,13 @@ const Alert = ({ children }: Props) => {
       className="alert alert-primary alert-dismissible fade show"
       role="alert"
     >
-      <strong>Holy guacamole!</strong> You should check in on some of those
-      fields below.
+      {children}
       <button
         type="button"
         className="btn-close"
         data-bs-dismiss="alert"
         aria-label="Close"
+        onClick={}
       ></button>
     </div>
   );

@@ -16,7 +16,7 @@ function App() {
           Hello <span>World</span>
         </Alert>
       )}
-      <Button onClick={() => console.log("Button clicked!")}>Click me!</Button>
+      <Button onClick={() => setAlertVisibility(true)}>Click me!</Button>
       <ListGroup
         heading="Numbers"
         items={items}

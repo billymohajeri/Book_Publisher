@@ -1,8 +1,6 @@
-import React from 'react'
-
 const ExpenseList = () => {
   return (
-    <div>ExpenseList</div>
+    <table className="table table-bordered">1</table>
   )
 }
 

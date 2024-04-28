@@ -1,6 +1,15 @@
 const ExpenseList = () => {
   return (
-    <table className="table table-bordered">1</table>
+    <table className="table table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
   )
 }
 

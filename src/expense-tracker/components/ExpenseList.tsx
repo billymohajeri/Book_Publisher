@@ -9,7 +9,7 @@ interface Props {
   expenses: Expense[];
 }
 
-const ExpenseList = ({expenses}:Props) => {
+const ExpenseList = ({ expenses }: Props) => {
   return (
     <table className="table table-bordered">
       <thead>
@@ -20,7 +20,11 @@ const ExpenseList = ({expenses}:Props) => {
           <th></th>
         </tr>
       </thead>
-      <tbody><tr></tr></tbody>
+      <tbody>
+        {expenses.map((expense) => (
+          <tr key={expense.id}></tr>
+        ))}
+      </tbody>
     </table>
   );
 };

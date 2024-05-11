@@ -27,7 +27,7 @@ const ExpenseList = ({ expenses }: Props) => {
             <td>{expense.amount}</td>
             <td>{expense.category}</td>
             <td>
-                
+              <button className="btn btn-outline-danger">Delete</button>
             </td>
           </tr>
         ))}

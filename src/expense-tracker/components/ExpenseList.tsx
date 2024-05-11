@@ -23,10 +23,12 @@ const ExpenseList = ({ expenses }: Props) => {
       <tbody>
         {expenses.map((expense) => (
           <tr key={expense.id}>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{expense.description}</td>
+            <td>{expense.amount}</td>
+            <td>{expense.category}</td>
+            <td>
+                
+            </td>
           </tr>
         ))}
       </tbody>

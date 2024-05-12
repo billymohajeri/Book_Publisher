@@ -32,7 +32,7 @@ function App() {
       /> */}
       <ExpenseList
         expenses={expenses}
-        onDelete={(id) => console.log(id, "Deleted")}
+        onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}
       />
     </div>
   );

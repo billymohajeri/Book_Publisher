@@ -7,6 +7,7 @@ interface Expense {
 
 interface Props {
   expenses: Expense[];
+  onDelete: (id: number) => void;
 }
 
 const ExpenseList = ({ expenses }: Props) => {

@@ -5,6 +5,12 @@ import { useState } from "react";
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 
 function App() {
+  const expenses = [
+    { id: 1, description: "aaa", amount: 10, category: "Utilities" },
+    { id: 2, description: "bbb", amount: 10, category: "Utilities" },
+    { id: 3, description: "ccc", amount: 10, category: "Utilities" },
+    { id: 4, description: "ddd", amount: 10, category: "Utilities" },
+  ];
   // let items = ["One", "Two", "Three", "Four", "Five"];
   // const handleSelectItem = (item: string) => {
   //   console.log(item);
@@ -23,7 +29,7 @@ function App() {
         items={items}
         onSelectItem={handleSelectItem}
       /> */}
-      <ExpenseList />
+      <ExpenseList expenses={} />
     </div>
   );
 }

@@ -12,11 +12,7 @@ function App() {
     { id: 4, description: "ddd", amount: 40, category: "Utilities" },
   ]);
 
-  // let items = ["One", "Two", "Three", "Four", "Five"];
-  // const handleSelectItem = (item: string) => {
-  //   console.log(item);
-  // };
-  // const [alertVisible, setAlertVisibility] = useState(false);
+
   return (
     <div>
       {/* {alertVisible && (

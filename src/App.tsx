@@ -26,8 +26,9 @@ function App() {
         items={items}
         onSelectItem={handleSelectItem}
       /> */}
-      
-      <ExpenseFilter onSelectCategory={(category) => console.log(category)} />
+      <div className="mb-3">
+        <ExpenseFilter onSelectCategory={(category) => console.log(category)} />
+      </div>
       <ExpenseList
         expenses={expenses}
         onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}

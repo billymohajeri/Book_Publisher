@@ -1,5 +1,9 @@
 import React from "react";
 
+interface Props {
+  onSelectCategory: (category: string) => void;
+}
+
 const ExpenseFilter = () => {
   return (
     <select className="form-select">

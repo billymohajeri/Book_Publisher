@@ -24,7 +24,7 @@ const ExpenseForm = () => {
           <option value=""></option>
           {categories.map((category) => (
             <option key={category} value={category}>
-              category
+              {category}
             </option>
           ))}
         </select>

@@ -1,5 +1,10 @@
-import React from "react";
+import { z } from "zod";
 import { categories } from "../../App";
+
+z.object({description:z.string().min(3).max(50),
+    amount:z.number().min(0.01).max(100_000),
+    category:z.enum(categories)
+})
 
 const ExpenseForm = () => {
   return (

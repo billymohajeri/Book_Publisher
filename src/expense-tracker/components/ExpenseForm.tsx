@@ -12,6 +12,11 @@ const schema = z.object({
 type ExpenseFormData = z.infer<typeof schema>;
 
 const ExpenseForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ExpenseFormData>({ resolver: zodResolver(schema) });
   return (
     <form>
       <div className="mb-3">

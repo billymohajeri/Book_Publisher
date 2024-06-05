@@ -23,7 +23,12 @@ const ExpenseForm = () => {
         <label htmlFor="description" className="form-label">
           Description
         </label>
-        <input id="description" type="text" className="form-control" />
+        <input
+          {...register("description")}
+          id="description"
+          type="text"
+          className="form-control"
+        />
       </div>
       <div className="mb-3">
         <label htmlFor="amount" className="form-label">
